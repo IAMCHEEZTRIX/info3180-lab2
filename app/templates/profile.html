@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="top-half">
+  <img class="portrait" src="{{ url_for('static', filename='images/portrait.jpeg') }}" alt="A portrait">
+  <h1 class="name">Damion Henry</h1>
+  <h2 class="username"><strong>@damion.henry</strong></h2>
+  <h2 class="address">Kingston, Jamaica</h2>
+  <h2 class="date-joined">Joined: {{message}}</h2>
+</div>
+
+<div class="bottom-half">
+  <p class="bio">I am a Web Developer for the Computing Subcommittee.
+    <br>I build and maintain digital platforms
+    <br>that support innovation and collaboration.
+  </p>
+  <div class="stats-container">
+    <div class="stat">
+      <span class="number">18</span>
+      <span class="label">Posts</span>
+    </div>
+
+    <div class="stat">
+      <span class="number">455</span>
+      <span class="label">Following</span>
+    </div>
+
+    <div class="stat">
+      <span class="number">4K</span>
+      <span class="label">Followers</span>
+    </div>
+  </div>
+ 
+  <button class="follow-button">Follow</button>
+</div>
+
+  
+{% endblock %}
